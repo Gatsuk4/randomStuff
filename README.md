@@ -1,4 +1,4 @@
-## 🌱 I’m currently learning about C/C++!
+## 🌱 Atualmente aprendendo sobre C/C++!
 
 <!--
 **Gatsuk4/Gatsuk4** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
