@@ -1,5 +1,6 @@
-## Iniciante Dev
-## Beginner Dev
+## Dev Iniciante 🌱
+
+## Beginner Dev 🌱
 
 <!--
 **Gatsuk4/Gatsuk4** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
