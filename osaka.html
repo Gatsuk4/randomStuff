@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      button,
+      a {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 10px 20px;
+        font-size: 18px;
+      }
+
+      button {
+        top: 72%;
+      }
+
+      a {
+        top: 80%;
+        text-decoration: none;
+        color: #fff;
+        background-color: #007bff;
+        border-radius: 5px;
+        padding: 10px 20px;
+        display: none;
+      }
+
+      body {
+        margin: 0;
+        height: 100vh;
+        position: relative;
+      }
+
+      img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 300px;
+        height: 300px;
+      }
+
+      iframe {
+        display: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 50%;
+        height: 50%;
+        border: none;
+        opacity: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <audio
+      id="SataAndagi"
+      src="https://us-tuna-sounds-files.voicemod.net/ed8053bb-1cbe-4a4c-a9d1-0769e3b0ab0d-1690075370443.mp3"
+    ></audio>
+
+    <img
+      id="img"
+      src="https://static.wikia.nocookie.net/azumanga/images/3/33/OsakaAnimePNG.png/revision/latest?cb=20250226175630"
+    />
+
+    <button onclick="StretchAndPlay()">Sata Andagi!!</button>
+
+    <a id="link" href="#">Caipirinha</a>
+
+    <iframe
+      id="youtubeVideo"
+      src="https://www.youtube.com/embed/488YxXFIpz8"
+      title="Capirinha"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    ></iframe>
+
+    <script>
+      var audio = document.getElementById("SataAndagi");
+      var img = document.getElementById("img");
+      var link = document.getElementById("link");
+      var iframe = document.getElementById("youtubeVideo");
+
+      var currentWidth = 300;
+      var clickCount = 0;
+
+      function StretchAndPlay() {
+        audio.play();
+        currentWidth += 50;
+        img.style.width = currentWidth + "px";
+        clickCount++;
+
+        if (clickCount === 30) {
+          link.style.display = "block";
+        }
+      }
+
+      link.addEventListener("click", function (event) {
+        event.preventDefault();
+        img.style.display = "none";
+        link.style.display = "none";
+        document.querySelector("button").style.display = "none";
+        iframe.style.display = "block";
+        setTimeout(() => {
+          iframe.style.opacity = "1";
+        }, 50);
+      });
+    </script>
+  </body>
+</html>
