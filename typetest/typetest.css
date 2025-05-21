@@ -16,7 +16,7 @@ body {
   position: absolute;
   color: #A9A9A9;
   font-size: 3em;
-  top: 82%;
+  top: 84%;
 }
 
 .type-container {
@@ -49,8 +49,8 @@ body {
   color: #fff;
   resize: none;
   height: 300px;
-  width: 600px;
-  top: 400px;
+  width: 595px;
+  top: 425px;
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 1.5rem;
@@ -58,8 +58,8 @@ body {
   padding: 1.5rem;
   box-sizing: border-box;
   white-space: pre-wrap;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
+  overflow-wrap: normal;
+  word-break: keep-all;
 }
 
 .correct {
