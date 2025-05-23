@@ -16,13 +16,13 @@ body {
   position: absolute;
   color: #A9A9A9;
   font-size: 3em;
-  top: 84%;
+  top: 75%;
 }
 
 .type-container {
   position: relative;
   width: 600px;
-  height: 500px;
+  height: 600px;
   pointer-events: none;
 }
 
@@ -50,7 +50,7 @@ body {
   resize: none;
   height: 300px;
   width: 595px;
-  top: 425px;
+  top: 350px;
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 1.5rem;
